@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Modal from '../views/Modal.vue'
+import Drawer from '@/views/Drawer.vue'
 
 const routes = [
   {
@@ -15,6 +16,11 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ '../views/List.vue'),
+  },
+  {
+    path: '/drawer',
+    name: Drawer,
+    component: Drawer,
   },
 ]
 
