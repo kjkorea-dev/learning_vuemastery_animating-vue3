@@ -3,6 +3,7 @@ import Modal from '../views/Modal.vue'
 import Drawer from '@/views/Drawer.vue'
 import Cards from '@/views/Cards.vue'
 import Simple from '@/views/Simple.vue'
+import Stagger from '@/views/Stagger.vue'
 
 const routes = [
   {
@@ -33,6 +34,11 @@ const routes = [
     path: '/simple',
     name: Simple,
     component: Simple,
+  },
+  {
+    path: '/stagger',
+    name: Stagger,
+    component: Stagger,
   },
 ]
 

@@ -4,7 +4,8 @@
     <router-link to="/list">List</router-link> |
     <router-link to="/drawer">Drawer</router-link> |
     <router-link to="/cards">Cards</router-link> |
-    <router-link to="/simple">Simple</router-link>
+    <router-link to="/simple">Simple</router-link> |
+    <router-link to="/stagger">Stagger</router-link>
   </div>
   <router-view v-slot="{ Component }">
     <transition name="slide-fade" mode="out-in">
