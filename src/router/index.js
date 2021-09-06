@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Modal from '../views/Modal.vue'
 import Drawer from '@/views/Drawer.vue'
+import Cards from '@/views/Cards.vue'
 
 const routes = [
   {
@@ -21,6 +22,11 @@ const routes = [
     path: '/drawer',
     name: Drawer,
     component: Drawer,
+  },
+  {
+    path: '/cards',
+    name: Cards,
+    component: Cards,
   },
 ]
 
