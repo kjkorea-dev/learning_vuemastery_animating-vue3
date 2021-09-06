@@ -4,7 +4,7 @@
     <router-link to="/about">About</router-link>
   </div>
   <router-view v-slot="{ Component }">
-    <transition name="fade" mode="out-in">
+    <transition name="slide-fade" mode="out-in">
       <component :is="Component"></component>
     </transition>
   </router-view>
@@ -62,5 +62,18 @@ button {
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease-out;
+}
+
+.slide-fade-enter-from {
+  transform: translateX(10px);
+  opacity: 0;
+}
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all 0.2s ease;
+}
+.slide-fade-leave-to {
+  transform: translateX(-10px);
+  opacity: 0;
 }
 </style>
