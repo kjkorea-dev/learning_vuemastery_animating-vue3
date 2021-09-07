@@ -4,6 +4,7 @@ import Drawer from '@/views/Drawer.vue'
 import Cards from '@/views/Cards.vue'
 import Simple from '@/views/Simple.vue'
 import Stagger from '@/views/Stagger.vue'
+import State from '@/views/State.vue'
 
 const routes = [
   {
@@ -39,6 +40,11 @@ const routes = [
     path: '/stagger',
     name: Stagger,
     component: Stagger,
+  },
+  {
+    path: '/state',
+    name: State,
+    component: State,
   },
 ]
 
