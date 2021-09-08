@@ -5,6 +5,7 @@ import Cards from '@/views/Cards.vue'
 import Simple from '@/views/Simple.vue'
 import Stagger from '@/views/Stagger.vue'
 import State from '@/views/State.vue'
+import Timeline from '@/views/Timeline.vue'
 
 const routes = [
   {
@@ -45,6 +46,11 @@ const routes = [
     path: '/state',
     name: State,
     component: State,
+  },
+  {
+    path: '/timeline',
+    name: Timeline,
+    component: Timeline,
   },
 ]
 
